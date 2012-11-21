@@ -40,7 +40,12 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
+    puts "=============================================="
+    puts "#{params[:product]}"
+    puts "=============================================="
+    
     @product = Product.new(params[:product])
+binding.pry
 
     respond_to do |format|
       if @product.save
