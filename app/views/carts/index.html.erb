@@ -9,6 +9,11 @@
 
 <% @carts.each do |cart| %>
   <tr>
+    <td><%=h cart.id %></td>
+    <td><%=h cart.created_at %></td>
+    <td><%=h cart.updated_at%></td>
+  </tr>
+  <tr>
     <td><%= link_to 'Show', cart %></td>
     <td><%= link_to 'Edit', edit_cart_path(cart) %></td>
     <td><%= link_to 'Destroy', cart, method: :delete, data: { confirm: 'Are you sure?' } %></td>

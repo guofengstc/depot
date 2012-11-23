@@ -21,6 +21,7 @@ class ProductsController < ApplicationController
     end
   end
 
+
   # GET /products/new
   # GET /products/new.json
   def new
@@ -45,7 +46,7 @@ class ProductsController < ApplicationController
     puts "=============================================="
     
     @product = Product.new(params[:product])
-binding.pry
+    # binding.pry
 
     respond_to do |format|
       if @product.save

@@ -115,12 +115,8 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
-<<<<<<< HEAD
-  mysql2
   pry
   pry-nav
-=======
->>>>>>> 4fc781660e5e8b56c7b22f684528dbd614cd4f3a
   rails (= 3.2.9)
   sass-rails (~> 3.2.3)
   sqlite3 (= 1.3.5)

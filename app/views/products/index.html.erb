@@ -9,6 +9,12 @@
 
 <% @products.each do |product| %>
   <tr>
+    <td>id</td>
+    <td>title</td>
+    <td>description</td>
+  </tr>
+  <tr>
+    <td><%=h product.id %></td>
     <td><%=h product.title %></td>
     <td><%=h product.description %></td>
     <td><%=h product.image_url %></td>
